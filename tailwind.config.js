@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/app/**/*.{ts,tsx}",
-    "./src/components/**/*.{ts,tsx}"
+    "./src/components/**/*.{tx,tsx}",
   ],
   theme: {
     extend: {
@@ -10,9 +10,9 @@ module.exports = {
         heading: "Inter_600SemiBold",
         subtitle: "Inter_500Medium",
         body: "Inter_400Regular",
-        bold: "Inter_700Bold",
+        bold: "Inter_700Bold"
       }
-    }
+    },
   },
   plugins: [],
 }
