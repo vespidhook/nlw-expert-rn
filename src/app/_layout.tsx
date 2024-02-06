@@ -8,6 +8,8 @@ import {
   Inter_700Bold
 } from '@expo-google-fonts/inter';
 
+import { Loading } from  "@/components/loading"
+
 export default function Layout() {
   const [fontLoaded] = useFonts({
     Inter_400Regular,
@@ -17,7 +19,7 @@ export default function Layout() {
   });
 
   if (!fontLoaded) {
-    return;
+    return <Loading />;
   }
 
   return (
