@@ -1,4 +1,4 @@
-import { Image, Text, View } from "react-native";
+import { Image, ScrollView, Text, View } from "react-native";
 import { useLocalSearchParams, useNavigation } from "expo-router";
 import { Feather } from "@expo/vector-icons";
 import { Redirect } from "expo-router";
@@ -46,14 +46,15 @@ export default function Product() {
         <Text className="text-slate-400 font-body text-base leading-6 mb-6">
           {product.description}
         </Text>
-
-        {
-          product.ingredients.map((ingredient) => (
-            <Text key={ingredient} className="text-slate-400 font-body text-base leading-6">
-              {"\u2022"} {ingredient}
-            </Text>
-          ))
-        }
+        <ScrollView>
+          {
+            product.ingredients.map((ingredient) => (
+              <Text key={ingredient} className="text-slate-400 font-body text-base leading-6">
+                {"\u2022"} {ingredient}
+              </Text>
+            ))
+          }
+        </ScrollView>
       </View>
 
       <View className="p-5 pb-8 gap-5">

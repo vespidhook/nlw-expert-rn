@@ -65,7 +65,7 @@ export default function Home() {
         }
         className='flex-1 p-5'
         showsVerticalScrollIndicator={false}
-        contentContainerStyle={{ paddingBottom: 1000}}
+        contentContainerStyle={{ paddingBottom: 100}}
       />
     </View>
   );
